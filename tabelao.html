@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+            height: 200px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;          
+        }
+
+        caption{
+            background-color: lightgrey;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+
+        div#container{overflow-x: auto;}
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+
+    <div id="container">
+        <table>
+            <caption>
+                Melhores filmes
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nomes</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th colspan="4" scope="colgroup">Filmes</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <th scope="row">Luiz</th>
+                        <td>25</td>
+                        <td>M</td>
+                        <td>Taxi Driver</td>
+                        <td>Batman X Superman</td>
+                        <td>O lobo de Wall Street</td>
+                        <td>Anjos da lei</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Matheus</th>
+                        <td>26</td>
+                        <td>M</td>
+                        <td>Se beber não case</td>
+                        <td>Pulp Fiction</td>
+                        <td>Avatar</td>
+                        <td>Titanic</td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+
+    
+</body>
+</html>
