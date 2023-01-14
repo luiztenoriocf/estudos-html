@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yyy</title>
+    <title>Interagindo com Iframe</title>
     <style>
-        iframe
-        {width: 500px;
-        height: 400px;
-        border: 1px solid red;
-    }
+        iframe#links{
+            border: 2px solid grey;
+            width: 96vw;
+            height: 400px;
+        }
        
     </style>
+</head>
 <body>
-    <p>Acesse o site do 
+    <h1>Exemplo</h1>
+    <ul type="circle">
+        <li><a href="consorcio.html" target="frame">Consórcio</a></li>
+        <li><a href="projeto2.html" target="frame">Android</a></li>
+        <li><a href="https://betnacional.com" target="frame">Betnacional.com</a></li>
+    </ul>
 
-        <iframe src="https://www.bcb.gov.br/" frameborder="1" scolling="no">
-            <a href="https://globo.com" target="_blank">Globo.com</a>
-        </iframe>
+    <iframe id="links" src="" name="frame" srcdoc="<h1>Escolha uma das opções do link acima</h1><p>Essa á a maneira de navegar com uso de Iframe!</p>">
+        <p>Essa á a maneira de navegar com uso de Iframe!</p>
+    </iframe>
+
+    <h1>Localização</h1>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1978.9724258054716!2d-35.89938520977149!3d-7.247117121443025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1673450395302!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
-    </p>
 </body>
 </html>
