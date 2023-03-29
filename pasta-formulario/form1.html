@@ -48,11 +48,63 @@
         </p>
 
         <p>
+            <label for="imedia">Média: <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" placeholder="0 a 10"></label>
+        </p>
+
+        <p>
+            <label for="idata">Data de registro: </label>
+            <input type="date" name="data" id="idata" required>
+        </p>
+
+        <p>
+            <label for="imes">Mês de quebra: </label>
+            <input type="month" name="mes" id="imes" required>
+        </p>
+
+        <p>
+            <label for="ihora">Horário de agendamento: </label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
             <label for="isenhaa">Senha de acesso: <input type="password" name="senhaa" id="isenhaa" minlength="6" maxlength="12" size="15" autocomplete="current-password" placeholder="Senha de acesso" required></label>
         </p>
         
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
+    </form>
+
+    <h2>Formulário de inscrição para ir ao jogo do Sport</h2>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="inomeee">Nome completo: </label>
+            <input type="text" name="nomeee" id="inomeee" maxlength="35" size="40" placeholder="Insira seu nome completo" required>
+        </p>
+
+        <p>
+            <label for="inasc">Data de nascimento: </label>
+            <input type="date" name="nas" id="inasc" required>
+        </p>
+
+        <p>
+            <label for="ipres">Horário de ida ao jogo: </label>
+            <input type="time" name="pres" id="ipres" required>
+        </p>
+
+        <p>
+            <label for="isenhaaa">Senha de confirmação: </label>
+            <input type="password" name="senhaaa" id="isenhaaa" minlength="6" maxlength="12" size="15" placeholder="Insira sua senha" autocomplete="current-password">
+        </p>
+
+        <p>
+            <label for="icadeira">Número da cadeira: </label>
+            <input type="number" name="cadeira" id="icadeira" min="1" max="32000" required>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar dados">
     </form>
     
 </body>
