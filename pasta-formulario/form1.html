@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Primeiro formulário</h1>
+
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p>
+            <label for="inome">Nome: </label><input type="text" name="nome" id="inome" required>
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="isobrenome" required>
+        </p>
+
+        <input type="submit" value="Enviar inscrição">
+
+        <p>
+            <label for="iusu">Usuário: <input type="text" name="usu" id="iusu" required minlength="6" maxlength="10" size="12"></label>
+        </p>
+
+        <p>
+            <label for="isenha">Senha: <input type="password" name="senha" id="isenha" required minlength="6" size="10"></label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <h1>Formulário Teste</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="inomee">Nome completo: <input type="text" name="nome" id="inomee" maxlength="30" size="35" placeholder="Digite seu nome" required></label>
+        </p>
+
+        <p>
+            <label for="imae">Nome da mãe: <input type="text" name="mae" id="imae" maxlength="30" size="35" placeholder="Digite nome da mãe" required></label>
+        </p>
+
+        <p>
+            <label for="isenhaa">Senha de acesso: <input type="password" name="senhaa" id="isenhaa" minlength="6" maxlength="12" size="15" autocomplete="current-password" placeholder="Senha de acesso" required></label>
+        </p>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
