@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinando formulário 2 e vendo select, datalist e output</title>
+</head>
+<body>
+    <section>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Dados de cadastro</legend>
+                <p>
+                    <label for="iusu">Login: </label>
+                    <input type="text" name="usu" id="iusu" minlength="4" maxlength="8" size="10" autocomplete="username" placeholder="Crie seu login" required>
+                </p>
+
+                <p>
+                    <label for="inome">Nome completo: </label>
+                    <input type="text" name="nome" id="inome" maxlength="40" size="35" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="idata">Data de nascimento: </label>
+                    <input type="date" name="data" id="idata" required>
+                </p>
+
+                <p>
+                    <label for="isenha">Crie sua senha: </label>
+                    <input type="password" name="senha" id="isenha" minlength="6" placeholder="Mín 6 dígitos" required>
+                </p>
+
+                <p>
+                    <label for="iemail">E-mail: </label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" size="20" placeholder="Insira seu E-mail" required>
+                </p>
+
+                <p>
+                    <label for="itel">Telefone: </label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx)xxxxx-xxxx" required>
+                </p>
+
+                <input type="radio" name="sexo" id="imasc">
+                <label for="imasc">Masculino</label>
+
+                <input type="radio" name="sexo" id="ifem">
+                <label for="ifem">Feminino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha suas cores favoritas</legend>
+               
+                <p>
+                    <label for="icor">Cor: </label>
+                    <input type="color" name="cor" id="icor" value="#ff0000">
+                </p>
+                
+                <input type="checkbox" name="verm" id="iverm">
+                <label for="iverm"> Vermelho</label><br>
+                               
+                <input type="checkbox" name="pret" id="ipreto">
+                <label for="ipreto">Preto</label><br>
+                               
+                <input type="checkbox" name="ama" id="iamar">
+                <label for="iamar">Amarelo</label><br>
+
+                <input type="checkbox" name="azul" id="iazul">
+                <label for="iazul">Azul</label><br>
+
+                <input type="checkbox" name="verde" id="iverde">
+                <label for="iverde">Verde</label><br>
+                
+            </fieldset>
+
+            <fieldset>
+            <legend>Satisfação e envio de arquivo</legend>
+            <p>
+                <label for="irang">Nível de satisfação de 1 a 5</label>
+                <input type="range" name="rang" id="irang" min="1" max="5" value="1">
+            </p>
+
+            <p>
+                <label for="iarq">Envie seu arquivo: </label>
+                <input type="file" name="arq" id="iarq" required>
+            </p>
+
+
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </section>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Seleções cotadas a vencer a copa de 2026</legend>
+            <label for="ipais">Seleções por continentes</label>
+            <select name="pais" id="ipais">
+                <option value="ND">--- Escolha ---</option>
+                <optgroup label="América do Sul">
+                    <option value="BR">Brasil</option>
+                    <option value="ARG">Argentina</option>
+                    <option value="URU">Uruguai</option>
+                </optgroup>
+
+                <optgroup label="Europa">
+                    <option value="ALE">Alemanha</option>
+                    <option value="ING">Inglaterra</option>
+                    <option value="FRA">França</option>
+                    <option value="ESP">Espanha</option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="imsg">Mensagem: </label><br>
+                <textarea name="msg" id="imsg" cols="40" rows="10"></textarea>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

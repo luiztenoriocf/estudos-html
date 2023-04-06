@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*impressora*/
+
+nav{
+    display: none;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+article{
+    width: 100%
+}
+
+article::before{
+    content: 'Impresso no site de Luiztenorio.com';
+}
