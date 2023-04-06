@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="shortcut icon" href="../imagens/messi.jpg" type="image/x-icon">
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Primeiro formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados de cadastro</legend>
+            <p>
+                <label for="inome">Nome completo: </label>
+                <input type="text" name="nome" id="inome" maxlength="35" size="40" placeholder="Insira seu nome completo" required>
+            </p>
+
+            <p>
+                <label for="idata">Data de Nascimento: </label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+
+            <p>
+                <label for="icpf">CPF: </label>
+                <input type="number" name="cpf" id="icpf" minlength="11" maxlength="11" size="11">
+            </p>
+
+            <p>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" minlength="6" maxlength="12" size="12" placeholder="6 a 12 caracteres" autocomplete="current-password" required>
+            </p>
+
+            <p>
+                <label for="inum">Número de cadastro: </label>
+                <input type="number" name="num" id="inum" min="1" max="1000" step="0.5">
+            </p>
+
+            <p>
+                <label for="ihor">Horário: </label>
+                <input type="time" name="hor" id="ihor" required>
+            </p>
+
+            <p>
+                <label for="imal">E-mail: </label>
+                <input type="email" name="email" id="imal" autocomplete="email" required>
+            </p>
+
+
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+    <h1>Formulário Teste</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>2º agrupamento</legend>
+                <p>
+                    <label for="inomee">Nome completo: <input type="text" name="nome" id="inomee" maxlength="30" size="35" placeholder="Digite seu nome" required></label>
+                </p>
+                <p>
+                    <label for="imae">Nome da mãe: <input type="text" name="mae" id="imae" maxlength="30" size="35" placeholder="Digite nome da mãe" required></label>
+                </p>
+                <p>
+                    <label for="imedia">Média: <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" placeholder="0 a 10"></label>
+                </p>
+                <p>
+                    <label for="idata">Data de registro: </label>
+                    <input type="date" name="data" id="idata" required>
+                </p>
+                <p>
+                    <label for="imes">Mês de quebra: </label>
+                    <input type="month" name="mes" id="imes" required>
+                </p>
+                <p>
+                    <label for="ihora">Horário de agendamento: </label>
+                    <input type="time" name="hora" id="ihora">
+                </p>
+                <p>
+                    <label for="isenhaa">Senha de acesso: <input type="password" name="senhaa" id="isenhaa" minlength="6" maxlength="12" size="15" autocomplete="current-password" placeholder="Senha de acesso" required></label>
+                </p>
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+
+    <h2>Formulário de inscrição para ir ao jogo do Sport</h2>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>3º agrupamento</legend>
+            <p>
+                <label for="inomeee">Nome completo: </label>
+                <input type="text" name="nomeee" id="inomeee" maxlength="35" size="40" placeholder="Insira seu nome completo" required>
+            </p>
+            <p>
+                <label for="inasc">Data de nascimento: </label>
+                <input type="date" name="nas" id="inasc" required>
+            </p>
+            <p>
+                <label for="ipres">Horário de ida ao jogo: </label>
+                <input type="time" name="pres" id="ipres" required>
+            </p>
+            <p>
+                <label for="isenhaaa">Senha de confirmação: </label>
+                <input type="password" name="senhaaa" id="isenhaaa" minlength="6" maxlength="12" size="15" placeholder="Insira sua senha" autocomplete="current-password">
+            </p>
+            <p>
+                <label for="icadeira">Número da cadeira: </label>
+                <input type="number" name="cadeira" id="icadeira" min="1" max="32000" required>
+            </p>
+            <!--aula 7 - e-mail e telefone-->
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Contato: </label>
+                <input type="tel" name="tel" id="itel" placeholder="(xx)xxxxx-xxxx" autocomplete="tel">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar dados">
+        </fieldset>
+    </form>
+
+    <h2>Checkbox e radio</h2>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="basq" id="ibasq"> <label for="ibasq">Basquete</label><br>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label><br>
+            <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">Vôlei</label><br>
+            <input type="checkbox" name="muay" id="imuay"> <label for="imuay">Muay Thai</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label><br>
+        </fieldset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+
+            <form action="cadastro.php" autocomplete="off" method="post">
+                <fieldset>
+                    <legend>Definição de cor</legend>
+                    <p>
+                        <label for="icor">Cor: </label>
+                        <input type="color" name="cor" id="icor" value="#85df42">
+                    </p>
+                    <p>
+                        <label for="isatis">Satisfação: </label>
+                        <input type="range" name="satis" id="isatis" min="1" max="5" value="2">
+                    </p>
+                    <p>
+                        <label for="ifoto">Foto atual: </label>
+                        <input type="file" name="foto" id="ifoto">
+                    </p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </fieldset>
+            </form>
+        <!--Capítulo 24 Aula 10 – Select, datalist e textarea em HTML-->
+
+        <h2>Seguindo</h2>
+
+        <form action="cadastro.pho" autocomplete="on" method="get">
+            <fieldset>
+
+                
+            </fieldset>
+
+            
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            
+        </form>
+
+    
+</body>
+</html>

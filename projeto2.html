@@ -7,6 +7,148 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo.css/style.css">
     <title>Projeto2</title>
+
+    <style>
+        *{margin: 0px;
+        padding: 0px;}
+
+        img{width: 100%;}
+
+        body{background-color: lightgreen;}
+
+        /*cabeçalho*/
+        header{
+            background-image: linear-gradient(to bottom, rgb(18, 156, 18), rgb(19, 177, 19));
+            min-height: 150px;
+            padding-top: 20px;
+            padding: 20px;
+        }
+        header > h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.589);
+            margin-bottom: 10px;
+        }
+
+        header > p{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.2em;
+            color: white;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.616);
+            max-width: 550px;
+            margin: auto;
+        }
+
+        /*menu*/
+        nav{
+            background-color: rgb(19, 179, 19);
+            padding: 3px;
+            padding-bottom: 8px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(19, 161, 19);
+            padding: 3px;
+            margin: 0px 3px 0px 0px;
+            font-weight: bold;
+        }
+        nav > a:hover{color: lightgray;
+            transition-duration: 0.3s;
+            padding: 8px;}
+
+        /*main*/
+        main{
+            min-width: 260px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 0px 0px 5px 5px;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.425);
+        }
+
+        main h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6em;
+            color: rgb(19, 161, 19);
+            margin-bottom: 10px;
+        }
+
+        main h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4em;
+            margin: 10px -15px 10px -15px;
+            color: white;
+            background-image: linear-gradient(to right, rgb(32, 180, 32) 60%, transparent);
+            padding: 0px 0px 0px 5px;
+            
+        }
+
+        main p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            text-align: justify;
+            line-height: 2em;
+        }
+
+        .externo{
+            color: green;
+            font-weight: bold;
+            text-decoration: none;}
+            .externo::after{content: '\1F517';}
+
+        /*video*/
+        .video > iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height:90%;
+            width: 90%;
+        }
+
+        .video{
+            background-color: rgb(32, 180, 32);
+            margin: 0px -15px 0px -15px;
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        /*aside*/
+        aside{
+            background-color: grey;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+
+        aside > ul{list-style-position: inside;}
+
+        /*footer*/
+        footer{
+            min-width: 280px;
+            margin: auto;
+        }
+        footer > p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            text-align: center;
+            color: white;
+            background-color: rgb(32, 180, 32);
+            padding: 1px;
+        }
+        footer a{
+            color: black;
+            text-decoration: none;
+        }
+
+        #ra{background-attachment: fixed;}
+
+    </style>
+
 </head>
 <body>
     <header>
@@ -35,7 +177,7 @@
 
             <picture>
                 <source media="(max-width: 700px)" srcset="imagens/dan-droids-pq.png">
-                <img src="imagens/dan-droids.png" alt="primeiro mascote do android">
+                <img id="ra" src="imagens/dan-droids.png" alt="primeiro mascote do android">
             </picture>
 
             <p>
@@ -44,7 +186,7 @@
 
             <h2>Surge um novo mascote</h2>
 
-            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="#">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="#" class="externo">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
 
             <picture>
                 <source media="(max-width: 700px)" srcset="imagens/irina-blok-pq.jpg">
@@ -94,6 +236,8 @@
             <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
         </article>
     </main>
-    <footer><p>Site criado por <a href="#">Luiz Tenório</a></p></footer>
+    <footer>
+        <p>Site criado por <a href="#">Luiz Tenório</a></p>
+    </footer>
 </body>
 </html>
